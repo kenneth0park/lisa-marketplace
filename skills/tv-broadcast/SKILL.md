@@ -26,13 +26,13 @@ secrets_required: []
 All commands act on the broadcast that is playing now. The user may have changed channel or app since the last request, so run the command again instead of reusing an earlier result.
 
 ```sh
-cd skills/tv-broadcast && sh scripts/tvb.sh info
-cd skills/tv-broadcast && sh scripts/tvb.sh video
-cd skills/tv-broadcast && sh scripts/tvb.sh audio_list
-cd skills/tv-broadcast && sh scripts/tvb.sh set_audio <audio_language_id>
-cd skills/tv-broadcast && sh scripts/tvb.sh subtitle_list
-cd skills/tv-broadcast && sh scripts/tvb.sh set_subtitle <subtitle_id>
-cd skills/tv-broadcast && sh scripts/tvb.sh caption on|off
+cd skills/tv-broadcast && sh scripts/run.sh info
+cd skills/tv-broadcast && sh scripts/run.sh video
+cd skills/tv-broadcast && sh scripts/run.sh audio_list
+cd skills/tv-broadcast && sh scripts/run.sh set_audio <audio_language_id>
+cd skills/tv-broadcast && sh scripts/run.sh subtitle_list
+cd skills/tv-broadcast && sh scripts/run.sh set_subtitle <subtitle_id>
+cd skills/tv-broadcast && sh scripts/run.sh caption on|off
 ```
 
 - `info` gives the channel (number, name) and the signal state. `video` gives resolution, scan type, frame rate, aspect ratio and 2D/3D.

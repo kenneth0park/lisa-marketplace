@@ -1,4 +1,4 @@
-# fake-tv-lib.sh — stand-in for the private TV library, used by test_tvb.sh through LISA_TV_LIB.
+# fake-tv-lib.sh — stand-in for the private TV library, used by test_run.sh through LISA_TV_LIB.
 # It defines the same one entry, `tvb <action> [arg]`, and answers with canned JSON.
 tvb() {
   case "${1:-}" in
